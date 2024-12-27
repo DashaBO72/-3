@@ -1,0 +1,165 @@
+#include <iostream>
+#include <Windows.h>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+    double X, A, max, B; // ABS 
+    /*cout << "X=";
+    cin >> X;
+    if (X / -1 <= 0) {
+
+        cout << "|X|=" << X << endl;
+
+}
+    {
+        double A, B, max; // Max0
+        cout << "Введіть А і В:";
+        cin >> A >> B;
+        cout << "A=" << A << " B=" << B << endl;
+        if (A < B) { max = B; }
+        else { max = A; }
+        cout << "Max(" << A << ", " << B << ")=" << max << endl;
+
+    }*/
+    {
+        double A, B, temp; // AB
+
+        cout << "Введіть А і В:";
+        cin >> A >> B;
+        cout << "A=" << A << " B=" << B << endl;
+       /* if (A > B) {
+            temp = A;
+            A = B;
+            B = temp;
+        }*/
+        temp = (B>A) ? A : B;
+       
+        B = (B>A) ? B : A;
+        A = temp;
+        cout << "A=" << A << " B=" << B << endl;
+    }/*
+    {
+        double A, B, C, temp; // ABC
+
+        cout << "Введіть А і В і С:";
+        cin >> A >> B >> C;
+        cout << "A=" << A << " B=" << B << " С=" << C << endl;
+        if (A > B) {
+            temp = A;
+            A = B;
+            B = temp;
+        }
+        if (B > C) {
+            temp = B;
+            B = C;
+            C = temp;
+        }
+        if (A > B) {
+            temp = A;
+            A = B;
+            B = temp;
+        }
+
+
+        cout << "A=" << A << " B=" << B << " С=" << C << endl;
+    }
+
+
+    {
+        double A, B, C, D, temp; // ABCD
+
+        cout << "Введіть А і В і С i D:";
+        cin >> A >> B >> C >> D;
+        cout << "A=" << A << " B=" << B << " С=" << C << " D=" << D << endl;
+        if (A > B) {
+            temp = A;
+            A = B;
+            B = temp;
+        }
+
+        if (B > C) {
+            temp = B;
+            B = C;
+            C = temp;
+        }
+        if (A > B) {
+            temp = A;
+            A = B;
+            B = temp;
+        }
+        if (C > D) {
+            temp = C;
+            C = D;
+            D = temp;
+        }
+        if (B > C) {
+            temp = B;
+            B = C;
+            C = temp;
+        }
+        if (A > B) {
+            temp = A;
+            A = B;
+            B = temp;
+        }
+        if (B > C) {
+            temp = B;
+            B = C;
+            C = temp;
+        }
+        if (C > D) {
+            temp = C;
+            C = D;
+            D = temp;
+        }
+
+
+
+        cout << "A=" << A << " B=" << B << " С=" << C << " D=" << D << endl; 
+    }
+    {
+        double x0=0, y0=3, R=6, x, y;// HIT 
+       
+        cout << "Введіть координати А (x, y): ";
+        cin >> x >> y;
+        if (x * x - 2 * x * x0 + x0 * x0 + y * y - 2 * y * y0 + y0 * y0 > R * R) {
+            cout << "Точка (" << x << ", " << y << ") не потрапляє в коло з центром в точці (" << x0 << ", " << y0 << ") радіуса " << R << endl;
+        }
+        else {
+            cout << "Точка (" << x << ", " << y << ") потрапляє в коло з центром в точці (" << x0 << ", " << y0 << ") радіуса " << R << endl;
+        }
+
+    }
+    int number = 1; // MENU
+    cout << "Працює інформаційна система факультета прикладної математики" << endl;
+    cout << "1.Новини дня" << endl << "2.Анекдот тижня" << endl << "3.Автора!!!" << endl << "Введіть відповідний номер і натисніть ENTER" << endl;
+    cin >> number;
+    switch (number) {
+    case 1: cout << "Новини дня" << endl;
+        break;
+    case 2: cout << "Анекдот тижня" << endl;
+        break;
+    case 3: cout << "Автора!!!" << endl;
+        break;
+    default: cout << "Немає інформації" << endl;
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+    */
+    system("pause");
+}
